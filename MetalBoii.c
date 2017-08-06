@@ -9,7 +9,11 @@ float drive(int input) {
 	if (abs(input)<50) {
 		return 0;
 	}
-	return pow(.05*input,2);
+	if (input < 0){
+		return -pow(.05*input,2);
+	}else{
+		return pow(.05*input,2);
+	}
 }
 task main()
 {
