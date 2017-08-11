@@ -17,7 +17,7 @@ float drive(int input) {
 }
 task main()
 {
-	int spin = 30;
+	int spin = 40;
 	/*
 	How to drive:
 		right side forward/back -> right joystick forward + back
@@ -38,7 +38,7 @@ task main()
 		motor[right] = drive(vexRT[Ch2]);
 
 		if (vexRT[Btn6U]) { 				//shoot
-			motor[shooter] = 150;
+			motor[shooter] = 100;
 			motor[leftSpin] = spin;
 			motor[rightSpin] = spin;
 			motor[sucker] = 0;
