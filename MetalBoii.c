@@ -43,12 +43,12 @@ task main()
 			motor[rightSpin] = spin;
 			motor[sucker] = 0;
 		}else if (vexRT[Btn5U]){  //pick up
-			motor[sucker] = spin;
+			motor[sucker] = -spin;
 			motor[leftSpin] = spin;
 			motor[rightSpin] = spin;
 			motor[shooter] = 0;
 		}else if (vexRT[Btn5D]) {  //spit out
-			motor[sucker] = -spin;
+			motor[sucker] = spin;
 			motor[leftSpin] = -spin;
 			motor[rightSpin] = -spin;
 			motor[shooter] = 0;
